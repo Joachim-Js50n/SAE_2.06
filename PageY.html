@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste jsp combien</title>
+    <style>
+        :root {
+            --blue: #2c75ff;
+            --black: #000000;
+            --glass-bg: rgba(90, 89, 102, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            --glass-blur: blur(15.5px);
+        }
+
+        body {
+            background-color: var(--black);
+            background-image: radial-gradient(circle at 80% 20%, #1a3a7a, #000);
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        main { 
+            width: 100%; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+         }
+
+        section#jsp {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5vw;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 0.9;
+            font-weight: 800;
+            letter-spacing: -4px;
+            margin: 0;
+            background-clip: text;
+            margin-bottom: 10vh;
+        }
+
+        section.fromat-glass {
+            width: 90vw;
+            max-width: 1100px;
+            background: var(--glass-bg);
+            border-radius: 16px;
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            padding: 5vw;
+            margin-bottom: 7vh;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        article {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .ligne-1 { width: 100%; }
+        .ligne-2 { width: calc(50% - 20px); min-width: 280px; }
+        .ligne-3 { width: calc(33.33% - 20px); min-width: 180px; }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="jsp">
+            <p>IUT'O Informatique</p>
+            <h1>Les Métiers "Front-End"</h1>
+            <h3>Un développeur front-end est chargé de la création de la <strong>partie visible</strong> d'un site internet ou d'une application, à savoir les interfaces graphiques. 
+                Cela exige la maîtrise du codage informatique est exigée, mais également savoir maintenir un contact avec les clients pour répondre aux besoins.
+            </h3>
+            <h3>Les métiers du "Front-End" néssescitent
+                du travail en équipe et une bonne gestion de projet.</h3>
+        </section>
+
+        <section class="fromat-glass">
+            <article class="ligne-1">
+                <h3>Développement / Programation</h3>
+                <p>De simple développeur à développeur full stack polyvalent, il y en a pour tout les gouts !</p>
+            </article>
+
+            <article class="ligne-1">
+                <h3>Management / Contact</h3>
+                <p>Un chef de projet tactile sera toujours le bienvenue dans une équipe, n'est-ce pas ?</p>
+            </article>
+
+            <article class="ligne-1">
+                <h3>Support / Maintenance</h3>
+                <p>Afin d'assurer la pérénité de votre projet. Toujours plus loin, toujours plus haut, toujours plus fort !</p>
+            </article>
+
+            <article class="ligne-1">
+                <h3>Qualité / Sécurité</h3>
+                <p>De quoi mettre vos compétences au profit des autres dans le besoin, et vous faire un bon profil dans le millieu.</p>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>
