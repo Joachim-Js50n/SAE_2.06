@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Métiers du Back-end - BUT Informatique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/placement.css">
+</head>
+<body>
+
+    <header class="entete-principale">
+        <nav class="navigation-site">
+            <ul>
+                <li><a href="PageJm.html">Accueil</a></li>
+                <li><a href="PageY.html">Recherche et Développement</a></li>
+                <li><a href="PageJ.html">Front-End</a></li>
+                <li><a href="PageR.html">Back-End</a></li>
+            </ul>
+        </nav>
+        
+        <section class="entete-titre">
+            <h1>LES MÉTIERS Back-end</h1>
+            <h2>La logique cachée derrière chaque clic</h2>
+        </section>
+    </header>
+
+    <main>
+        <section class="bloc-verre-simple section-aeree">
+            <h3>Qu'est-ce que le Back-end ?</h3>
+            <p>
+                C'est la partie "immergée de l'iceberg". Alors que le Front-end gère l'interface, le Back-end s'occupe de la <strong>logique métier</strong>, de la <strong>manipulation des données</strong> et de la <strong>sécurité</strong>.
+            </p>
+            <p>
+                En BUT Informatique à Orléans, vous aborderez ces concepts dès la 1ère année (Ressources R1.01/R2.01) et vous pourrez vous spécialiser via le parcours <em>"Réalisation d'applications : conception, développement, validation"</em>.
+            </p>
+        </section>
+
+        <section class="bloc-verre-simple">
+            <h3>Le voyage d'une donnée (Architecture Client-Serveur)</h3>
+            <ul class="schema-processus">
+                <li class="etape-cle">
+                    <strong>1. Client</strong>
+                    <br>Envoi requête HTTP
+                </li>
+                <li class="fleche-processus">&#8594;</li>
+                <li class="etape-cle">
+                    <strong>2. Serveur</strong>
+                    <br>Traitement (PHP/Java)
+                </li>
+                <li class="fleche-processus">&#8594;</li>
+                <li class="etape-cle">
+                    <strong>3. BDD</strong>
+                    <br>Requête SQL
+                </li>
+                <li class="fleche-processus">&#8617;</li>
+                <li class="etape-cle">
+                    <strong>4. Réponse</strong>
+                    <br>Envoi JSON/HTML
+                </li>
+            </ul>
+        </section>
+
+        <section class="grille-metiers">
+            
+            <article class="carte-metier">
+                <img src="Doc/image/code ecran.jpg" alt="Code sur écran">
+                <h3>Développeur Back-end / API</h3>
+                <p>L'architecte des fonctionnalités.</p>
+                <a href="#detail-dev" class="bouton-action">Voir la fiche</a>
+            </article>
+
+            <article class="carte-metier">
+                <img src="Doc/image/serveur.png" alt="Serveurs">
+                <h3>Ingénieur DevOps Junior</h3>
+                <p>Le pont entre le code et le déploiement.</p>
+                <a href="#detail-ops" class="bouton-action">Voir la fiche</a>
+            </article>
+
+        </section>
+
+        <section id="detail-dev" class="conteneur-details">
+            
+            <article class="fiche-detail">
+                <h3>Focus Métier : Développeur Back-end</h3>
+                
+                <h4>Missions au quotidien</h4>
+                <ul class="liste-missions">
+                    <li>Conception et développement d'<strong>API REST</strong> (le moyen de communication avec le Front-end).</li>
+                    <li>Écriture de règles de gestion (ex: calculer un panier, vérifier un mot de passe).</li>
+                    <li>Optimisation des performances serveur et sécurisation des échanges.</li>
+                </ul>
+
+                <h4>Parcours BUT Informatique</h4>
+                <p>
+                    <strong>Cœur de métier :</strong> Algorithmique, Programmation Objet (Java), Web (PHP).<br>
+                    <strong>Poursuite d'études :</strong> Master MIAGE, École d'ingénieur (Polytech Orléans), ou insertion pro directe après le BUT3.
+                </p>
+
+                <h4>Comparatif des technologies (enseignées en BUT)</h4>
+                <table class="tableau-competences">
+                    <thead>
+                        <tr>
+                            <th>Langage</th>
+                            <th>Usage principal</th>
+                            <th>Force</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Java (Spring)</strong></td>
+                            <td>Grandes entreprises</td>
+                            <td>Robustesse & Typage fort</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PHP (Symfony)</strong></td>
+                            <td>Web standard</td>
+                            <td>Rapidité de déploiement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Python (Django)</strong></td>
+                            <td>Data & IA</td>
+                            <td>Simplicité & Bibliothèques</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="detail-ops" class="fiche-detail">
+                <h3>Focus Métier : DevOps Junior</h3>
+                
+                <h4>Missions au quotidien</h4>
+                <ul class="liste-missions">
+                    <li>Automatisation des mises en production (CI/CD).</li>
+                    <li>Gestion des conteneurs (<strong>Docker</strong>, Kubernetes).</li>
+                    <li>Surveillance (Monitoring) de la santé des serveurs.</li>
+                </ul>
+
+                <h4>Parcours et Sous-branches</h4>
+                <p>Ce profil hybride nécessite des compétences en <strong>Système</strong> (Linux) et en <strong>Réseaux</strong>, matières centrales du BUT Info.</p>
+                <p><em>Évolutions possibles :</em> Site Reliability Engineer (SRE), Architecte Cloud.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="pied-page">
+        <p>SAÉ 2.06 - Groupe (Yanis,Jules,Rayan) - IUT d'Orléans</p>
+    </footer>
+</body>
+</html>

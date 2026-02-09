@@ -1,0 +1,71 @@
+:root {
+    --bleu: #2c75ff;
+    --noir: #000000;
+    --fond-carte: rgba(255, 255, 255, 0.08); 
+    --bordure: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--noir);
+    background-image: radial-gradient(circle at 50% 30%, #1a3a7a, #000);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 3.5em; 
+    margin: 0;
+    color: var(--bleu);
+}
+
+h2, h3 {
+    color: var(--bleu);
+}
+
+.navigation-site a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation-site a:hover {
+    border-bottom: 2px solid var(--bleu);
+}
+
+
+.bloc-verre-simple, .carte-metier {
+    background-color: var(--fond-carte);
+    border: 1px solid var(--bordure);
+    border-radius: 12px;
+}
+
+.carte-metier:hover {
+    border-color: var(--bleu);
+}
+
+.carte-metier img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.tableau-competences th, .tableau-competences td {
+    border: 1px solid var(--bordure);
+    padding: 10px;
+    text-align: left;
+}
+
+.tableau-competences th {
+    background-color: rgba(44, 117, 255, 0.2);
+    color: var(--bleu);
+}
+
+.pied-page {
+    color: #888888;
+    font-size: 0.8em;
+}
+
+.grille-metiers {
+    padding: 20px;
+}

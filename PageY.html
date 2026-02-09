@@ -3,120 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste jsp combien</title>
-    <style>
-        :root {
-            --blue: #2c75ff;
-            --black: #000000;
-            --glass-bg: rgba(90, 89, 102, 0.15);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-            --glass-blur: blur(15.5px);
-        }
-
-        body {
-            background-color: var(--black);
-            background-image: radial-gradient(circle at 80% 20%, #1a3a7a, #000);
-            color: #ffffff;
-            margin: 0;
-            line-height: 1.5;
-            overflow-x: hidden;
-        }
-
-        main { 
-            width: 100%; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center;
-         }
-
-        section#jsp {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 0 5vw;
-        }
-
-        h1 {
-            font-size: clamp(3rem, 10vw, 8rem);
-            line-height: 0.9;
-            font-weight: 800;
-            letter-spacing: -4px;
-            margin: 0;
-            background-clip: text;
-            margin-bottom: 10vh;
-        }
-
-        section.fromat-glass {
-            width: 90vw;
-            max-width: 1100px;
-            background: var(--glass-bg);
-            border-radius: 16px;
-            box-shadow: var(--glass-shadow);
-            backdrop-filter: var(--glass-blur);
-            border: 1px solid var(--glass-border);
-            padding: 5vw;
-            margin-bottom: 7vh;
-            
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        article {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--glass-border);
-            border-radius: 12px;
-            padding: 25px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .ligne-1 { width: 100%; }
-        .ligne-2 { width: calc(50% - 20px); min-width: 280px; }
-        .ligne-3 { width: calc(33.33% - 20px); min-width: 180px; }
-
-    </style>
+    <title>R&D Informatique - Carrières</title>
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <header class="entete-principale">
+        <nav class="navigation-site">
+            <ul>
+                <li><a href="PageJm.html">Accueil</a></li>
+                <li><a href="PageY.html">Recherche et Développement</a></li>
+                <li><a href="PageJ.html">Front-End</a></li>
+                <li><a href="PageR.html">Back-End</a></li>
+            </ul>
+        </nav>
+        <section class="entete-titre">
+            <h1>LES MÉTIERS R&D </h1>
+            <p>De l'idée à la réalité : les métiers de l'innovation.</p>
+        </section>
+    </header>
+
     <main>
-        <section id="jsp">
-            <p>IUT'O Informatique</p>
-            <h1>Les Métiers "Front-End"</h1>
-            <h3>Un développeur front-end est chargé de la création de la <strong>partie visible</strong> d'un site internet ou d'une application, à savoir les interfaces graphiques. 
-                Cela exige la maîtrise du codage informatique est exigée, mais également savoir maintenir un contact avec les clients pour répondre aux besoins.
-            </h3>
-            <h3>Les métiers du "Front-End" néssescitent
-                du travail en équipe et une bonne gestion de projet.</h3>
+        <section id="definition" class="bloc-verre-simple section-aeree">
+            <h2>La R&D, c'est quoi (pour les nuls) ?</h2>
+            <p>
+                Imaginez les coulisses d'un restaurant expérimental.
+                La <strong>Recherche</strong>, c'est le chef qui imagine une recette qui n'existe pas encore.
+                Le <strong>Développement</strong>, c'est le cuisinier qui fait 100 essais pour que la recette soit réalisable et délicieuse à chaque fois.
+            </p>
+            <p>
+                En informatique, c'est pareil : on imagine les technologies de demain (IA, nouveaux logiciels) et on trouve comment les fabriquer pour de vrai.
+                C'est le métier de ceux qui aiment <strong>résoudre des énigmes</strong>.
+            </p>
         </section>
 
-        <section class="fromat-glass">
-            <article class="ligne-1">
-                <h3>Développement / Programation</h3>
-                <p>De simple développeur à développeur full stack polyvalent, il y en a pour tout les gouts !</p>
+        <section id="metiers">
+            <h2 style="text-align: center; margin-bottom: 30px;">Les Métiers Phares</h2>
+            <div class="grille-metiers">
+                
+                <article class="carte-metier">
+                    <img src="Doc/image/QA.png" alt="Testeur QA">
+                    <h3>Analyste Qualité (QA)</h3>
+                    <p>Le "Chasseur de Bugs". Il casse le programme exprès pour vérifier qu'il est solide.</p>
+                    <a href="#detail-qa" class="bouton-action">Voir la fiche &darr;</a>
+                </article>
+
+                <article class="carte-metier">
+                    <img src="Doc/image/assistant_chef.png" alt="Chef de projet">
+                    <h3>Assistant Chef de Projet</h3>
+                    <p>Le "Chef d'Orchestre". Il s'assure que les développeurs et les clients se comprennent.</p>
+                    <a href="#detail-cp" class="bouton-action">Voir la fiche &darr;</a>
+                </article>
+
+                <article class="carte-metier">
+                    <img src="Doc/image/int.png" alt="Intégrateur">
+                    <h3>Intégrateur</h3>
+                    <p>Le "Mécano". Il assemble des morceaux de logiciels différents pour créer un tout qui marche.</p>
+                    <a href="#detail-int" class="bouton-action">Voir la fiche &darr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="parcours" class="bloc-verre-simple section-aeree">
+            <h2>Le Cycle de Vie d'un Projet R&D</h2>
+            <ol class="schema-processus">
+                <li class="etape-cle">
+                    <strong>Idée </strong>
+                    <span>Analyse des besoins</span>
+                </li>
+                <li class="fleche-processus">&rarr;</li>
+                <li class="etape-cle">
+                    <strong>Prototype </strong>
+                    <span>On bricole une V1</span>
+                </li>
+                <li class="fleche-processus">&rarr;</li>
+                <li class="etape-cle">
+                    <strong>Crash Test </strong>
+                    <span>Validation QA</span>
+                </li>
+                <li class="fleche-processus">&rarr;</li>
+                <li class="etape-cle">
+                    <strong>Produit </strong>
+                    <span>Mise en ligne</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="conteneur-details">
+            
+            <article id="detail-qa" class="fiche-detail">
+                <h3>Zoom Métier : Analyste Qualité (QA)</h3>
+                
+                <section class="detail-contenu">
+                    <h4>Le Parcours depuis le BUT Info Orléans</h4>
+                    <p>
+                        Après votre <strong>BUT Informatique (Parcours RACDV)</strong>, vous avez les bases techniques. 
+                        Pour se spécialiser, on conseille souvent une Licence Pro "Métiers du Test" ou un Master spécialisé Qualité Logicielle.
+                        Le BUT seul permet d'accéder à des postes de "Testeur Junior".
+                    </p>
+
+                    <h4>Les Missions au quotidien</h4>
+                    <ul class="liste-missions">
+                        <li>Création de plans de tests (scénarios d'usage).</li>
+                        <li>Automatisation des tests (écrire des scripts en Python/Selenium).</li>
+                        <li>Rédaction de rapports de bugs précis pour les développeurs.</li>
+                        <li>Validation finale avant la mise en production.</li>
+                    </ul>
+
+                    <h4>Qualités requises</h4>
+                    <p>Rigueur extrême, patience, esprit critique ("pourquoi ça marche ?"), diplomatie.</p>
+
+                    <h4>Salaire Brut Annuel (Moyenne)</h4>
+                    <table class="tableau-competences tableau-salaire">
+                        <tr>
+                            <th>Niveau</th>
+                            <th>Salaire estimé</th>
+                        </tr>
+                        <tr>
+                            <td>Débutant (Junior)</td>
+                            <td>30 000 € - 35 000 €</td>
+                        </tr>
+                        <tr>
+                            <td>Expérimenté (Senior)</td>
+                            <td>40 000 € - 55 000 €</td>
+                        </tr>
+                    </table>
+                </section>
             </article>
 
-            <article class="ligne-1">
-                <h3>Management / Contact</h3>
-                <p>Un chef de projet tactile sera toujours le bienvenue dans une équipe, n'est-ce pas ?</p>
+            <article id="detail-cp" class="fiche-detail">
+                <h3>Zoom Métier : Assistant Chef de Projet</h3>
+                
+                <section class="detail-contenu">
+                    <h4>Le Parcours depuis le BUT Info Orléans</h4>
+                    <p>
+                        Le <strong>BUT Informatique</strong> vous donne la crédibilité technique.
+                        Cependant, pour ce poste à responsabilités, une poursuite d'études est recommandée :
+                        Master MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à Orléans ou École d'ingénieurs (Polytech).
+                    </p>
+
+                    <h4>Les Missions au quotidien</h4>
+                    <ul class="liste-missions">
+                        <li>Recueil des besoins auprès du client.</li>
+                        <li>Planification des "Sprints" (méthode Agile).</li>
+                        <li>Suivi de l'avancement de l'équipe technique.</li>
+                        <li>Gestion des imprévus et du budget.</li>
+                    </ul>
+
+                    <h4>Qualités requises</h4>
+                    <p>Leadership, excellent relationnel, organisation, capacité à vulgariser la technique.</p>
+
+                    <h4>Salaire Brut Annuel (Moyenne)</h4>
+                    <table class="tableau-competences tableau-salaire">
+                        <tr>
+                            <th>Niveau</th>
+                            <th>Salaire estimé</th>
+                        </tr>
+                        <tr>
+                            <td>Junior</td>
+                            <td>35 000 € - 38 000 €</td>
+                        </tr>
+                        <tr>
+                            <td>Confirmé</td>
+                            <td>45 000 € - 60 000 € +</td>
+                        </tr>
+                    </table>
+                </section>
             </article>
 
-            <article class="ligne-1">
-                <h3>Support / Maintenance</h3>
-                <p>Afin d'assurer la pérénité de votre projet. Toujours plus loin, toujours plus haut, toujours plus fort !</p>
-            </article>
+            <article id="detail-int" class="fiche-detail">
+                <h3>Zoom Métier : Intégrateur de Solutions</h3>
+                
+                <section class="detail-contenu">
+                    <h4>Le Parcours depuis le BUT Info Orléans</h4>
+                    <p>
+                        C'est un métier très accessible directement après le <strong>BUT Informatique (3 ans)</strong>.
+                        Le parcours RACDV prépare bien à l'intégration d'applications Web.
+                        L'apprentissage en entreprise (alternance) est la voie royale pour ce métier.
+                    </p>
 
-            <article class="ligne-1">
-                <h3>Qualité / Sécurité</h3>
-                <p>De quoi mettre vos compétences au profit des autres dans le besoin, et vous faire un bon profil dans le millieu.</p>
+                    <h4>Les Missions au quotidien</h4>
+                    <ul class="liste-missions">
+                        <li>Installation et configuration de logiciels (CMS, ERP, CRM).</li>
+                        <li>Connexion entre différents systèmes via des API.</li>
+                        <li>Adaptation des interfaces graphiques (Front-End léger).</li>
+                        <li>Formation des utilisateurs finaux.</li>
+                    </ul>
+
+                    <h4>Qualités requises</h4>
+                    <p>Polyvalence, débrouillardise ("savoir chercher sur Google"), logique, adaptabilité.</p>
+
+                    <h4>Salaire Brut Annuel (Moyenne)</h4>
+                    <table class="tableau-competences tableau-salaire">
+                        <tr>
+                            <th>Niveau</th>
+                            <th>Salaire estimé</th>
+                        </tr>
+                        <tr>
+                            <td>Débutant</td>
+                            <td>28 000 € - 32 000 €</td>
+                        </tr>
+                        <tr>
+                            <td>Expert</td>
+                            <td>38 000 € - 48 000 €</td>
+                        </tr>
+                    </table>
+                </section>
             </article>
         </section>
 
+        <section id="formation" class="bloc-verre-simple section-aeree">
+            <h2>Corrélation BUT et Réalité R&D</h2>
+            <table class="tableau-competences">
+                <thead>
+                    <tr>
+                        <th>Ressource BUT (Orléans)</th>
+                        <th>Application concrète métier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>R1.01 - Initiation Dév.</td>
+                        <td>Base logique pour l'Intégrateur et le QA.</td>
+                    </tr>
+                    <tr>
+                        <td>R5.A.08 - Qualité</td>
+                        <td>Cœur de métier de l'Analyste Qualité.</td>
+                    </tr>
+                    <tr>
+                        <td>R5.A.10 - Gestion de projet</td>
+                        <td>Outils quotidiens du Chef de Projet (Gantt, Agile).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
+
+    <footer class="pied-page">
+        <p>SAÉ 2.06 - Groupe (Yanis,Jules,Rayan) - IUT d'Orléans</p>
+    </footer>
 
 </body>
 </html>
